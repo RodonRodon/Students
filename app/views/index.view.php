@@ -30,15 +30,29 @@
         <button type="submit">Submit</button>
     </form>
 
+
     <table>
-        <?php   foreach ($users as $user): ?>
+        <?php foreach ($users as $user): ?>
+
             <tr>
-                <td> <?= $user->Name; ?> </td>
+
+                <td> <?= $user->name; ?> </td>
+
                 <td> <?= $user->lastname; ?> </td>
+
                 <td> <?= $user->gender; ?> </td>
+
                 <td> <?= $user->groups; ?> </td>
+
                 <td> <?= $user->birthdate; ?> </td>
+
                 <td> <?= $user->exam; ?> </td>
+
+                <td> <?= $user->local; ?> </td>
+
+                <td> <?= $user->email; ?> </td>
+
+
             </tr>                                                                                                                                                                                                                                                                                        "<td>" . $user->local . "</td>";
         <?php endforeach; ?>
     </table>
