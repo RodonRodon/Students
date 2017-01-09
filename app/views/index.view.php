@@ -53,8 +53,10 @@
                 <td> <?= $user->email; ?> </td>
 
 
-            </tr>                                                                                                                                                                                                                                                                                        "<td>" . $user->local . "</td>";
+            </tr>
+            
         <?php endforeach; ?>
+
     </table>
 
 <?php require('partials/footer.php') ?>
