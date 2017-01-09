@@ -30,4 +30,17 @@
         <button type="submit">Submit</button>
     </form>
 
+    <table>
+        <?php   foreach ($users as $user): ?>
+            <tr>
+                <td> <?= $user->Name; ?> </td>
+                <td> <?= $user->lastname; ?> </td>
+                <td> <?= $user->gender; ?> </td>
+                <td> <?= $user->groups; ?> </td>
+                <td> <?= $user->birthdate; ?> </td>
+                <td> <?= $user->exam; ?> </td>
+            </tr>                                                                                                                                                                                                                                                                                        "<td>" . $user->local . "</td>";
+        <?php endforeach; ?>
+    </table>
+
 <?php require('partials/footer.php') ?>
